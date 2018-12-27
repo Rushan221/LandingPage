@@ -42,8 +42,8 @@ body {
 }
 
 .content .logo {
-  height: 280px;
-  width: 280px;
+  height: 300px;
+  width: 300px;
 }
 
 .content .title {
@@ -96,6 +96,10 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.grid-1 {
+  margin-left: 10rem;
 }
 
 /* Media queries */
