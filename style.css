@@ -136,3 +136,17 @@ footer p {
     top: 0;
   }
 }
+
+/*Additional CSS*/
+
+h3 {
+  color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: #f4f4f4;
+}
