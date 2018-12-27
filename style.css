@@ -9,7 +9,7 @@ body {
   content: "";
   height: 100vh;
   width: 100%;
-  background-image: url(image.jpeg);
+  background-image: url(background.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -96,4 +96,43 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Media queries */
+
+@media (max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+  .content .logo {
+    height: 140px;
+    width: 140px;
+  }
+  .content .text {
+    display: none;
+  }
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+}
+
+/*For landscape view*/
+
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+  .content {
+    top: 0;
+  }
 }
