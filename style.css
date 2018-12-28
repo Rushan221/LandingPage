@@ -73,6 +73,7 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
 }
 
 .center {
@@ -102,6 +103,12 @@ footer p {
   margin-left: 10rem;
 }
 
+.grid-4 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* Media queries */
 
 @media (max-width: 560px) {
@@ -122,6 +129,9 @@ footer p {
   .grid-3,
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 2fr;
   }
   .services div {
     border-bottom: #333 dashed 1px;
@@ -153,4 +163,12 @@ a {
 
 i {
   color: #f4f4f4;
+}
+
+.About {
+  color: #333333;
+}
+
+.skills {
+  color: #333;
 }
