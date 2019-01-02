@@ -172,3 +172,124 @@ i {
 .skills {
   color: #333;
 }
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333333;
+}
+
+.bg-dark {
+  background: #333333;
+  color: #f4f4f4;
+}
+
+footer {
+  padding: 2.2 rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.grid-1 {
+  margin-left: 10rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Media queries */
+
+@media (max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+  .content .logo {
+    height: 140px;
+    width: 140px;
+  }
+  .content .text {
+    display: none;
+  }
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 2fr;
+  }
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+}
+
+/*For landscape view*/
+
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+  .content {
+    top: 0;
+  }
+}
+
+/*Additional CSS*/
+
+h3 {
+  color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: #f4f4f4;
+}
+
+.About {
+  color: #333333;
+}
+
+.skills {
+  color: #333;
+}
+
+.img-profile {
+  border: #333333;
+}
